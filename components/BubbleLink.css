@@ -1,0 +1,152 @@
+/* Presets */
+
+.preset1-cont {
+  background-color: #bbb;
+  top: -125px;
+  left: -100px;
+}
+
+.preset1-cont h2 {
+  font-weight: 200;
+  top: 50%;
+  position: relative;
+}
+
+.preset2-cont {
+  background-color: #aaa;
+  top: -125px;
+  right: -100px;
+}
+
+.preset2-cont h2, .preset2-cont h4 {
+  font-weight: 200;
+  top: 50%;
+  position: relative;
+}
+
+.preset3-cont {
+  background-color: #999;
+  left: -100px;
+  bottom: -100px;
+}
+
+.preset3-cont h2, preset3-cont p {
+  font-weight: 200;
+  top: 40%;
+  position: relative;
+}
+.preset4-cont {
+  background-color: #777;
+  bottom: -100px;
+  right: -100px;
+  z-index: 1;
+}
+
+.preset4-cont h2, .preset4-cont p {
+  font-weight: 200;
+  top: 40%;
+  position: relative;
+}
+
+.preset5-cont {
+  position: absolute;
+  left: 50%;
+  bottom: -550px;
+  z-index: 0;
+}
+
+.preset5-cont div {
+  background-color: #555;
+  border-radius: 350px;
+  height: 700px;
+  width: 700px;
+  text-align: center;
+  color: white;
+  position: relative;
+  left: -50%;
+}
+
+.preset5-cont h2, .preset5-cont p {  
+  font-weight: 200;
+  top: 10%;
+  position: relative;
+}
+
+.preset-focus-cont {
+  position: absolute;
+  left: 50%;
+  bottom: 40vh;
+  z-index: 1;
+}
+
+.preset-focus-cont div {
+  background-color: #555;
+  border-radius: 350px;
+  height: 200px;
+  width: 200px;
+  text-align: center;
+  color: white;
+  position: relative;
+  left: -50%;
+}
+
+.preset-focus-cont h2, .preset-focus-cont p {  
+  font-weight: 600;
+  top: 40%;
+  position: relative;
+}
+
+/* Animations */
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 #7b7b7bFF;
+    box-shadow: 0 0 0 0 #7b7b7bFF;
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px #7b7b7b55;
+      box-shadow: 0 0 0 10px #7b7b7b55;
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 8px #7b7b7b11;
+      box-shadow: 0 0 0 8px #7b7b7b11;
+  }
+}
+
+/* General Presets */
+
+.circleDiv {
+    border-radius: 200px;
+    height: 400px;
+    width: 400px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    overflow:hidden;
+}
+
+.circleDiv:hover {
+  animation: pulse 1s infinite;
+}
+
+.preset-text div:hover {
+  animation: none;
+}
+
+.preset-text:hover {
+  animation: none;
+}
+
+.preset-center-cont div:hover {
+  animation: pulse 1s infinite;
+}
+
+
+.circleDiv div {
+  height: 100%;
+  position: relative;
+}
+
+.circleText {
+     top: 40%;
+     position: 'relative';
+}
