@@ -13,6 +13,22 @@ import ViewWorkExperience from './views/WorkExperience';
 
 
 class App extends Component {
+  updateGradient(rgb1, rgb2) {
+    var x = document.getElementsByClassName("root-background");
+    var i;
+    for (i = 0; i < x.length; i++) {
+      x[i].style.backgroundColor = "";
+    }
+  }
+
+
+  componentDidMount() {
+    var x = document.getElementsByClassName("root-background");
+    var i;
+    for (i = 0; i < x.length; i++) {
+      x[i].style.backgroundColor = "";
+    }
+  }
   constructor() {
     super();
     this.state = {
@@ -22,13 +38,15 @@ class App extends Component {
 
   render() {
     return (
-      <Router>
-        <Route exact path="/" component={base} />
-        <Route path="/skills/" component={ViewSkills} />
-        <Route path="/workexperience/" component={ViewWorkExperience} />
-        <Route path="/passions/" component={ViewPassions}/>
-        <Route path="/sideprojects/" component={ViewSideProjects} />
-      </Router>
+      <div className="root-background">
+        <Router>
+          <Route exact path="/" component={base} />
+          <Route path="/skills/" component={ViewSkills} />
+          <Route path="/workexperience/" component={ViewWorkExperience} />
+          <Route path="/passions/" component={ViewPassions}/>
+          <Route path="/sideprojects/" component={ViewSideProjects} />
+        </Router>
+      </div>
 
     );
   }
